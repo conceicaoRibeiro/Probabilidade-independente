@@ -4,7 +4,7 @@ public class Possibilidade {
 	
 	public double otimista(double bom,double regular,double fraco){
 		
-		System.out.println("Soma do cenário otimista" );
+		System.out.println("Soma do cenÃ¡rio otimista" );
 		double cenarioOtimista= bom + regular + fraco;
 		System.out.println(( float)cenarioOtimista);
 		
@@ -13,7 +13,7 @@ public class Possibilidade {
 	
 	public double neutro(double bom,double regular,double fraco){
 	
-		System.out.println("Soma do cenário neutro" );
+		System.out.println("Soma do cenÃ¡rio neutro" );
 		double cenarioNeutro = bom + regular + fraco;
 		
 		System.out.println((float)cenarioNeutro);
@@ -23,9 +23,9 @@ public class Possibilidade {
 	}
 	
 	  public double pessimista(double bom, double regular, double fraco ){
-		  System.out.println("Soma do cenário fraco" );
+		  System.out.println("Soma do cenÃ¡rio fraco" );
 		  
-		  double cenarioPessimista = bom + regular + fraco * 100;
+		  double cenarioPessimista = bom + regular + fraco;
 		  System.out.println((float)cenarioPessimista);
 		  
 		  return cenarioPessimista;
@@ -34,7 +34,7 @@ public class Possibilidade {
 	  
 	  
 	  public double desempenhoBom(double bomOtimo, double bomRegular,double bomFraco){
-		  System.out.println("Soma de todos os  desempenhos Bons de todos os cenários " );
+		  System.out.println("Soma de todos os  desempenhos Bons de todos os cenÃ¡rios " );
 		  double desempenhoBom = bomOtimo + bomRegular + bomFraco;
 		  System.out.println((float)desempenhoBom);
 		  
@@ -43,7 +43,7 @@ public class Possibilidade {
 	
 	  
 	  public double desempenhoRegular(double regularOtimo,double regularNeutro, double regularFraco) {
-		  System.out.println("Soma de todos os  desempenhos Regularares de todos os cenários " );
+		  System.out.println("Soma de todos os  desempenhos Regularares de todos os cenÃ¡rios " );
 		  double desempenhoRegular = regularOtimo + regularNeutro + regularFraco ;
 		  
 		  System.out.println((float)desempenhoRegular);
@@ -54,8 +54,8 @@ public class Possibilidade {
 	  
 	  
 	  public double desempenhoFraco(double fracoBom,double fracoNeutro, double fracoPessimista) {
-		  System.out.println("Soma de todos os  desempenhos Fracos de todos os cenários " );
-		  double desempenhoFraco = fracoBom + fracoNeutro + fracoPessimista *100;
+		  System.out.println("Soma de todos os  desempenhos Fracos de todos os cenÃ¡rios " );
+		  double desempenhoFraco = fracoBom + fracoNeutro + fracoPessimista;
 		  System.out.println((float)desempenhoFraco);
 		  
 		  return desempenhoFraco;
